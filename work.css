@@ -28,10 +28,12 @@ nav {
     font-size: 0.9rem;
     font-weight: 300;
   }
-  section-2 {
+  section-2 article:first-of-type {
     display: grid;
+    grid-template: 2 / 2;
   }
-  section-2 article :first-of-type {
+  section-2 article h1 {
+    color: #a306b6;
   }
 }
 
