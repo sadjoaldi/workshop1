@@ -166,3 +166,48 @@ waterSigns.unshift("♋");
 console.log(waterSigns);
 // the line below is for testing, don't touch it :)
 console.log(waterSigns[0] === "♋" ? "Good Answer ✅" : "Wrong Answer ❌");
+
+// Given an array of names of people but mixing lower case and upper case letters, you will have to:
+// - Create a function that contains the logic to refactor those names so it converts a name like `anTHoNY` to `Anthony`.
+// - A function that accepts two parameters: an array and a callback function that is in charge of refactoring all items inside that array
+// - Return the original array but with all names properly typed
+
+const people = [
+  "JoHn",
+  "ChrISTiana",
+  "anThoNY",
+  "MARia",
+  "jaMeS",
+  "MIChaEl",
+  "jeNNIFeR",
+];
+
+function capitalize(world) {
+  return world.charAt(0).toUpperCase() + world.slice(1).toLowerCase();
+}
+
+function refacName(people) {
+  return people.map((name) => capitalize(name));
+}
+
+const peopleRefac = refacName(people);
+console.log(peopleRefac);
+
+//-------------
+//correction
+//-----
+// Fonction pour capitaliser la première lettre d'un mot
+// function capitalize(word) {
+//     return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+//   }
+
+// Fonction pour refacturer les noms dans un tableau
+//   function refactorNames(array) {
+//     return array.map(name => capitalize(name));
+//   }
+
+// Utilisation de la fonction pour refacturer les noms dans le tableau people
+//   const peopleRefactored = refactorNames(people);
+
+//   console.log(peopleRefactored);
+// Output: ["John", "Christiana", "Anthony", "Maria", "James", "Michael", "Jennifer"]
