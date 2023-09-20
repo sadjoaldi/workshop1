@@ -95,26 +95,26 @@
 
 // Here are our Astro signs provided as a string.
 
-const aries = `♈`,
-  taurus = `♉`,
-  gemini = `♊`,
-  cancer = `♋`,
-  leo = `♌`,
-  virgo = `♍`,
-  libra = `♎`,
-  scorpio = `♏`,
-  sagittarius = `♐`,
-  capricorn = `♑`,
-  aquarius = `♒`,
-  pisces = `♓︎`;
+// const aries = `♈`,
+//   taurus = `♉`,
+//   gemini = `♊`,
+//   cancer = `♋`,
+//   leo = `♌`,
+//   virgo = `♍`,
+//   libra = `♎`,
+//   scorpio = `♏`,
+//   sagittarius = `♐`,
+//   capricorn = `♑`,
+//   aquarius = `♒`,
+//   pisces = `♓︎`;
 
 // In Western Astrology there are 12 signs, organized by Earth Elements (Eart, Water, Air, Fire)
 // You are going to manipulate the following arrays along with this challenge:
 
-const fireSigns = [aries, leo];
-const earthSigns = [taurus, virgo, capricorn, sagittarius];
-const airSigns = [pisces, gemini, libra, aquarius];
-const waterSigns = [scorpio, pisces];
+// const fireSigns = [aries, leo];
+// const earthSigns = [taurus, virgo, capricorn, sagittarius];
+// const airSigns = [pisces, gemini, libra, aquarius];
+// const waterSigns = [scorpio, pisces];
 
 /*  🏁 Add one final element to an array 
     Sagittarius is missing from fire signs please add it at the 
@@ -122,13 +122,13 @@ const waterSigns = [scorpio, pisces];
 */
 
 // ✒️ Write your code here
-fireSigns.push("♐");
-console.log(fireSigns);
-console.log(
-  fireSigns[fireSigns.length - 1] === "♐"
-    ? "Good Answer ✅"
-    : "Wrong Answer ❌"
-);
+// fireSigns.push("♐");
+// console.log(fireSigns);
+// console.log(
+//   fireSigns[fireSigns.length - 1] === "♐"
+//     ? "Good Answer ✅"
+//     : "Wrong Answer ❌"
+// );
 
 /* 🏁 Remove the last element of an array
       Sagittarius should not be on earth Signs, please remove 
@@ -136,14 +136,14 @@ console.log(
 */
 
 // ✒️ Write your code here
-earthSigns.pop();
-console.log(earthSigns);
+// earthSigns.pop();
+// console.log(earthSigns);
 // the line below is for testing, don't touch it :)
-console.log(
-  earthSigns[earthSigns.length - 1] !== "♐"
-    ? "Good Answer ✅"
-    : "Wrong Answer ❌"
-);
+// console.log(
+//   earthSigns[earthSigns.length - 1] !== "♐"
+//     ? "Good Answer ✅"
+//     : "Wrong Answer ❌"
+// );
 
 /* 🏁 Remove one element at the begining of an array
       Pisces should not be on air Signs, please remove Pisces 
@@ -151,10 +151,10 @@ console.log(
 */
 
 // ✒️ Write your code here
-airSigns.shift("`♓︎`");
-console.log(airSigns);
+// airSigns.shift("`♓︎`");
+// console.log(airSigns);
 // the line below is for testing, don't touch it :)
-console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
+// console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
 
 /*  🏁 Add one element at the beginning of an array
     Cancer is missing from water signs please add it at the 
@@ -162,52 +162,178 @@ console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
 */
 
 // ✒️ Write your code here
-waterSigns.unshift("♋");
-console.log(waterSigns);
+// waterSigns.unshift("♋");
+// console.log(waterSigns);
 // the line below is for testing, don't touch it :)
-console.log(waterSigns[0] === "♋" ? "Good Answer ✅" : "Wrong Answer ❌");
+// console.log(waterSigns[0] === "♋" ? "Good Answer ✅" : "Wrong Answer ❌");
 
 // Given an array of names of people but mixing lower case and upper case letters, you will have to:
 // - Create a function that contains the logic to refactor those names so it converts a name like `anTHoNY` to `Anthony`.
 // - A function that accepts two parameters: an array and a callback function that is in charge of refactoring all items inside that array
 // - Return the original array but with all names properly typed
 
-const people = [
-  "JoHn",
-  "ChrISTiana",
-  "anThoNY",
-  "MARia",
-  "jaMeS",
-  "MIChaEl",
-  "jeNNIFeR",
+// const people = [
+//   "JoHn",
+//   "ChrISTiana",
+//   "anThoNY",
+//   "MARia",
+//   "jaMeS",
+//   "MIChaEl",
+//   "jeNNIFeR",
+// ];
+
+// function capitalize(world) {
+//   return world.charAt(0).toUpperCase() + world.slice(1).toLowerCase();
+// }
+
+// function refacName(people) {
+//   return people.map((name) => capitalize(name));
+// }
+
+// const peopleRefac = refacName(people);
+// console.log(peopleRefac);
+
+// Welcome to Decode, your mission is to decode the full message. Good luck
+
+// EX 01 -  Use a loop to remove the 'X' and use console.log to reveal the message
+const hiddenMessage = [
+  "X",
+  "X",
+  "X",
+  "X",
+  "W",
+  "X",
+  "E",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "L",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "L",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  " ",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "D",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "O",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "N",
+  "X",
+  "X",
+  "X",
+  "X",
+  "E",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  "X",
+  ",",
+  "X",
+  " ",
+  "X",
 ];
 
-function capitalize(world) {
-  return world.charAt(0).toUpperCase() + world.slice(1).toLowerCase();
+// Your code goes here
+let revealedMessage = "";
+for (let i = 0; i < hiddenMessage.length; i++) {
+  if (hiddenMessage[i] !== "X") {
+    revealedMessage += hiddenMessage[i];
+  }
 }
+console.log(revealedMessage);
 
-function refacName(people) {
-  return people.map((name) => capitalize(name));
+// EX 02 - Remove the 'X' and the even numbers
+// Hint: As this is a string you should find a way to convert into an array.
+
+const hiddenCode =
+  "XXXXXXXXXXXXXXXXXXXXXXXXXXXCXXXXXXXOXXXXXDXXXXXXXXXXXXXXXEXXXX XXXXXXXXXXXXXXX:X0XXXXXXX2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3XXXXXX2XXXXXXXXX2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX6XXXXXXXXXXXXXXX6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2XXXXXXXXXX8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX8XXXXXXXXXXX4XXXXXXXXXXXX6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX4XXXXXXXXXXXXXXXXXXX9XXXX9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2XXX4XXXXXXXXXXX6XXXXXXXXX2XXXXXXXX3XXXXXXXX2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX4XXXXX";
+
+// Your code goes here
+
+let codeArray = hiddenCode.split("");
+let revealedCode = "";
+for (let i = 0; i < codeArray.length; i++) {
+  if (codeArray[i] !== "X" && Number(codeArray[i]) % 2 !== 0) {
+    revealedCode += codeArray[i];
+  }
 }
-
-const peopleRefac = refacName(people);
-console.log(peopleRefac);
-
-//-------------
-//correction
-//-----
-// Fonction pour capitaliser la première lettre d'un mot
-// function capitalize(word) {
-//     return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-//   }
-
-// Fonction pour refacturer les noms dans un tableau
-//   function refactorNames(array) {
-//     return array.map(name => capitalize(name));
-//   }
-
-// Utilisation de la fonction pour refacturer les noms dans le tableau people
-//   const peopleRefactored = refactorNames(people);
-
-//   console.log(peopleRefactored);
-// Output: ["John", "Christiana", "Anthony", "Maria", "James", "Michael", "Jennifer"]
+console.log(revealedCode);
